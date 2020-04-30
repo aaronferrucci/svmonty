@@ -1,15 +1,16 @@
 `default_nettype none
-class Monty #(GOAT_COUNT=2);
+class Monty;
   typedef enum {GOAT=1, PRIZE=0} t_door;
 
   int valid = 1;
+  int goat_count = 2;
   rand t_door doors[3];
   rand int unsigned stay;
   rand int unsigned show;
   rand int unsigned switch;
 
   constraint c_goat_count {
-    doors.sum() == GOAT_COUNT;
+    doors.sum() == goat_count;
   };
 
   constraint c_stay {
@@ -18,8 +19,10 @@ class Monty #(GOAT_COUNT=2);
 
   // constraints are "bidirectional" without these constraints, which leads
   // to non-uniform distribution and unexpected results.
-  constraint order0 { solve doors before stay;}
-  constraint order1 { solve stay before show;}
+  constraint order {
+    solve doors before stay;
+    solve stay before show;
+  }
 
   constraint c_show {
     show < $size(doors);
@@ -44,6 +47,8 @@ class Monty #(GOAT_COUNT=2);
     coverpoint valid {
       bins valid_game = {1};
     }
+    stay_win: cross valid, doors[stay];
+    switch_win: cross valid, doors[switch];
   endgroup
 
   function void print;
@@ -55,11 +60,11 @@ class Monty #(GOAT_COUNT=2);
 
   function new;
     results = new;
+    results.option.name = "Modified Monty Hall Problem";
   endfunction
 endclass
 
 module top;
-
 
   initial begin
 
