@@ -1,16 +1,15 @@
 all: compile run
 
 compile:
-	vlog +acc +cover -sv monty.sv
+	vlog -sv monty.sv
 
 gui:
 	vsim top
 
 run:
-	vopt +cover +acc top -o top_debug
+	vopt top -o top_debug
 	vsim \
 	  -c \
-	  -coverage \
 	  -sv_seed random \
 	  top_debug \
           -do "coverage save -onexit top.ucdb; run 0us; exit -code 0"
