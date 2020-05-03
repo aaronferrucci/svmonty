@@ -1,0 +1,455 @@
+QuestaSim-64 vcover 2020.1_1 Coverage Utility 2020.03 Mar  4 2020
+Start time: 18:54:05 on May 02,2020
+vcover report -all -details top.ucdb 
+Coverage Report by instance with details
+
+=================================================================================
+=== Instance: /monty_sv_unit
+=== Design Unit: work.monty_sv_unit
+=================================================================================
+
+Covergroup Coverage:
+    Covergroups                      1        na        na    89.58%
+        Coverpoints/Crosses         12        na        na        na
+            Covergroup Bins         52        32        20    61.53%
+----------------------------------------------------------------------------------------------------------
+Covergroup                                             Metric       Goal       Bins    Status               
+                                                                                                         
+----------------------------------------------------------------------------------------------------------
+ TYPE /monty_sv_unit/Monty/results                     89.58%        100          -    Uncovered            
+    covered/total bins:                                    32         52          -                      
+    missing/total bins:                                    20         52          -                      
+    % Hit:                                             61.53%        100          -                      
+    Coverpoint stay                                   100.00%        100          -    Covered              
+        covered/total bins:                                 1          1          -                      
+        missing/total bins:                                 0          1          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin win                                         50020          1          -    Covered              
+    Coverpoint switch                                 100.00%        100          -    Covered              
+        covered/total bins:                                 1          1          -                      
+        missing/total bins:                                 0          1          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin win                                         66411          1          -    Covered              
+    Coverpoint valid                                  100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[0]                                     33227          1          -    Covered              
+        bin auto[1]                                     66773          1          -    Covered              
+    Coverpoint doors                                  100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[PRIZE]                                 66411          1          -    Covered              
+        bin auto[GOAT]                                  33589          1          -    Covered              
+    Coverpoint #doors[stay]__0#                       100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[PRIZE]                                 50020          1          -    Covered              
+        bin auto[GOAT]                                  49980          1          -    Covered              
+    Coverpoint goatcount                              100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[0]                                     24971          1          -    Covered              
+        bin auto[1]                                     24805          1          -    Covered              
+        bin auto[2]                                     25135          1          -    Covered              
+        bin auto[3]                                     25089          1          -    Covered              
+    Coverpoint #doors[switch]__1#                     100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[PRIZE]                                 66411          1          -    Covered              
+        bin auto[GOAT]                                  33589          1          -    Covered              
+    Coverpoint #doors[stay]__2#                       100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[PRIZE]                                 50020          1          -    Covered              
+        bin auto[GOAT]                                  49980          1          -    Covered              
+    Cross stay_stats                                   37.50%        100          -    Uncovered            
+        covered/total bins:                                 6         16          -                      
+        missing/total bins:                                10         16          -                      
+        % Hit:                                         37.50%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <auto[3],auto[1],auto[GOAT]>            25089          1          -    Covered              
+            bin <auto[2],auto[1],auto[GOAT]>            16635          1          -    Covered              
+            bin <auto[1],auto[0],auto[GOAT]>             8256          1          -    Covered              
+            bin <auto[2],auto[1],auto[PRIZE]>            8500          1          -    Covered              
+            bin <auto[1],auto[1],auto[PRIZE]>           16549          1          -    Covered              
+            bin <auto[0],auto[0],auto[PRIZE]>           24971          1          -    Covered              
+            bin <auto[0],auto[1],*>                         0          1          2    ZERO                 
+            bin <auto[3],auto[0],*>                         0          1          2    ZERO                 
+            bin <auto[2],auto[0],*>                         0          1          2    ZERO                 
+            bin <auto[0],*,auto[GOAT]>                      0          1          2    ZERO                 
+            bin <auto[3],*,auto[PRIZE]>                     0          1          2    ZERO                 
+            bin <auto[1],auto[1],auto[GOAT]>                0          1          1    ZERO                 
+            bin <auto[1],auto[0],auto[PRIZE]>               0          1          1    ZERO                 
+    Cross switch_stats                                 37.50%        100          -    Uncovered            
+        covered/total bins:                                 6         16          -                      
+        missing/total bins:                                10         16          -                      
+        % Hit:                                         37.50%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <auto[3],auto[1],auto[GOAT]>            25089          1          -    Covered              
+            bin <auto[2],auto[1],auto[GOAT]>             8500          1          -    Covered              
+            bin <auto[2],auto[1],auto[PRIZE]>           16635          1          -    Covered              
+            bin <auto[1],auto[1],auto[PRIZE]>           16549          1          -    Covered              
+            bin <auto[1],auto[0],auto[PRIZE]>            8256          1          -    Covered              
+            bin <auto[0],auto[0],auto[PRIZE]>           24971          1          -    Covered              
+            bin <auto[0],auto[1],*>                         0          1          2    ZERO                 
+            bin <auto[3],auto[0],*>                         0          1          2    ZERO                 
+            bin <auto[2],auto[0],*>                         0          1          2    ZERO                 
+            bin <auto[1],*,auto[GOAT]>                      0          1          2    ZERO                 
+            bin <auto[0],*,auto[GOAT]>                      0          1          2    ZERO                 
+            bin <auto[3],*,auto[PRIZE]>                     0          1          2    ZERO                 
+            bin <*,auto[0],auto[GOAT]>                      0          1          4    ZERO                 
+    Cross goat_independent_stay_stats                 100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <auto[1],auto[GOAT]>                    41724          1          -    Covered              
+            bin <auto[1],auto[PRIZE]>                   25049          1          -    Covered              
+        Illegal and Ignore Bins:
+            ignore_bin ignore_invalid                   33227                     -    Occurred             
+    Cross goat_independent_switch_stats               100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <auto[1],auto[GOAT]>                    33589          1          -    Covered              
+            bin <auto[1],auto[PRIZE]>                   33184          1          -    Covered              
+        Illegal and Ignore Bins:
+            ignore_bin ignore_invalid                   33227                     -    Occurred             
+ Covergroup instance Modified Monty Hall Problem       89.58%        100          -    Uncovered            
+    covered/total bins:                                    32         52          -                      
+    missing/total bins:                                    20         52          -                      
+    % Hit:                                             61.53%        100          -                      
+    Coverpoint stay                                   100.00%        100          -    Covered              
+        covered/total bins:                                 1          1          -                      
+        missing/total bins:                                 0          1          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin win                                         50020          1          -    Covered              
+    Coverpoint switch                                 100.00%        100          -    Covered              
+        covered/total bins:                                 1          1          -                      
+        missing/total bins:                                 0          1          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin win                                         66411          1          -    Covered              
+    Coverpoint valid                                  100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[0]                                     33227          1          -    Covered              
+        bin auto[1]                                     66773          1          -    Covered              
+    Coverpoint doors                                  100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[PRIZE]                                 66411          1          -    Covered              
+        bin auto[GOAT]                                  33589          1          -    Covered              
+    Coverpoint #doors[stay]__0#                       100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[PRIZE]                                 50020          1          -    Covered              
+        bin auto[GOAT]                                  49980          1          -    Covered              
+    Coverpoint goatcount                              100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[0]                                     24971          1          -    Covered              
+        bin auto[1]                                     24805          1          -    Covered              
+        bin auto[2]                                     25135          1          -    Covered              
+        bin auto[3]                                     25089          1          -    Covered              
+    Coverpoint #doors[switch]__1#                     100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[PRIZE]                                 66411          1          -    Covered              
+        bin auto[GOAT]                                  33589          1          -    Covered              
+    Coverpoint #doors[stay]__2#                       100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[PRIZE]                                 50020          1          -    Covered              
+        bin auto[GOAT]                                  49980          1          -    Covered              
+    Cross stay_stats                                   37.50%        100          -    Uncovered            
+        covered/total bins:                                 6         16          -                      
+        missing/total bins:                                10         16          -                      
+        % Hit:                                         37.50%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <auto[3],auto[1],auto[GOAT]>            25089          1          -    Covered              
+            bin <auto[2],auto[1],auto[GOAT]>            16635          1          -    Covered              
+            bin <auto[1],auto[0],auto[GOAT]>             8256          1          -    Covered              
+            bin <auto[2],auto[1],auto[PRIZE]>            8500          1          -    Covered              
+            bin <auto[1],auto[1],auto[PRIZE]>           16549          1          -    Covered              
+            bin <auto[0],auto[0],auto[PRIZE]>           24971          1          -    Covered              
+            bin <auto[0],auto[1],*>                         0          1          2    ZERO                 
+            bin <auto[3],auto[0],*>                         0          1          2    ZERO                 
+            bin <auto[2],auto[0],*>                         0          1          2    ZERO                 
+            bin <auto[0],*,auto[GOAT]>                      0          1          2    ZERO                 
+            bin <auto[3],*,auto[PRIZE]>                     0          1          2    ZERO                 
+            bin <auto[1],auto[1],auto[GOAT]>                0          1          1    ZERO                 
+            bin <auto[1],auto[0],auto[PRIZE]>               0          1          1    ZERO                 
+    Cross switch_stats                                 37.50%        100          -    Uncovered            
+        covered/total bins:                                 6         16          -                      
+        missing/total bins:                                10         16          -                      
+        % Hit:                                         37.50%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <auto[3],auto[1],auto[GOAT]>            25089          1          -    Covered              
+            bin <auto[2],auto[1],auto[GOAT]>             8500          1          -    Covered              
+            bin <auto[2],auto[1],auto[PRIZE]>           16635          1          -    Covered              
+            bin <auto[1],auto[1],auto[PRIZE]>           16549          1          -    Covered              
+            bin <auto[1],auto[0],auto[PRIZE]>            8256          1          -    Covered              
+            bin <auto[0],auto[0],auto[PRIZE]>           24971          1          -    Covered              
+            bin <auto[0],auto[1],*>                         0          1          2    ZERO                 
+            bin <auto[3],auto[0],*>                         0          1          2    ZERO                 
+            bin <auto[2],auto[0],*>                         0          1          2    ZERO                 
+            bin <auto[1],*,auto[GOAT]>                      0          1          2    ZERO                 
+            bin <auto[0],*,auto[GOAT]>                      0          1          2    ZERO                 
+            bin <auto[3],*,auto[PRIZE]>                     0          1          2    ZERO                 
+            bin <*,auto[0],auto[GOAT]>                      0          1          4    ZERO                 
+    Cross goat_independent_stay_stats                 100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <auto[1],auto[GOAT]>                    41724          1          -    Covered              
+            bin <auto[1],auto[PRIZE]>                   25049          1          -    Covered              
+        Illegal and Ignore Bins:
+            ignore_bin ignore_invalid                   33227                     -    Occurred             
+    Cross goat_independent_switch_stats               100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <auto[1],auto[GOAT]>                    33589          1          -    Covered              
+            bin <auto[1],auto[PRIZE]>                   33184          1          -    Covered              
+        Illegal and Ignore Bins:
+            ignore_bin ignore_invalid                   33227                     -    Occurred             
+
+COVERGROUP COVERAGE:
+----------------------------------------------------------------------------------------------------------
+Covergroup                                             Metric       Goal       Bins    Status               
+                                                                                                         
+----------------------------------------------------------------------------------------------------------
+ TYPE /monty_sv_unit/Monty/results                     89.58%        100          -    Uncovered            
+    covered/total bins:                                    32         52          -                      
+    missing/total bins:                                    20         52          -                      
+    % Hit:                                             61.53%        100          -                      
+    Coverpoint stay                                   100.00%        100          -    Covered              
+        covered/total bins:                                 1          1          -                      
+        missing/total bins:                                 0          1          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin win                                         50020          1          -    Covered              
+    Coverpoint switch                                 100.00%        100          -    Covered              
+        covered/total bins:                                 1          1          -                      
+        missing/total bins:                                 0          1          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin win                                         66411          1          -    Covered              
+    Coverpoint valid                                  100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[0]                                     33227          1          -    Covered              
+        bin auto[1]                                     66773          1          -    Covered              
+    Coverpoint doors                                  100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[PRIZE]                                 66411          1          -    Covered              
+        bin auto[GOAT]                                  33589          1          -    Covered              
+    Coverpoint #doors[stay]__0#                       100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[PRIZE]                                 50020          1          -    Covered              
+        bin auto[GOAT]                                  49980          1          -    Covered              
+    Coverpoint goatcount                              100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[0]                                     24971          1          -    Covered              
+        bin auto[1]                                     24805          1          -    Covered              
+        bin auto[2]                                     25135          1          -    Covered              
+        bin auto[3]                                     25089          1          -    Covered              
+    Coverpoint #doors[switch]__1#                     100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[PRIZE]                                 66411          1          -    Covered              
+        bin auto[GOAT]                                  33589          1          -    Covered              
+    Coverpoint #doors[stay]__2#                       100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[PRIZE]                                 50020          1          -    Covered              
+        bin auto[GOAT]                                  49980          1          -    Covered              
+    Cross stay_stats                                   37.50%        100          -    Uncovered            
+        covered/total bins:                                 6         16          -                      
+        missing/total bins:                                10         16          -                      
+        % Hit:                                         37.50%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <auto[3],auto[1],auto[GOAT]>            25089          1          -    Covered              
+            bin <auto[2],auto[1],auto[GOAT]>            16635          1          -    Covered              
+            bin <auto[1],auto[0],auto[GOAT]>             8256          1          -    Covered              
+            bin <auto[2],auto[1],auto[PRIZE]>            8500          1          -    Covered              
+            bin <auto[1],auto[1],auto[PRIZE]>           16549          1          -    Covered              
+            bin <auto[0],auto[0],auto[PRIZE]>           24971          1          -    Covered              
+            bin <auto[0],auto[1],*>                         0          1          2    ZERO                 
+            bin <auto[3],auto[0],*>                         0          1          2    ZERO                 
+            bin <auto[2],auto[0],*>                         0          1          2    ZERO                 
+            bin <auto[0],*,auto[GOAT]>                      0          1          2    ZERO                 
+            bin <auto[3],*,auto[PRIZE]>                     0          1          2    ZERO                 
+            bin <auto[1],auto[1],auto[GOAT]>                0          1          1    ZERO                 
+            bin <auto[1],auto[0],auto[PRIZE]>               0          1          1    ZERO                 
+    Cross switch_stats                                 37.50%        100          -    Uncovered            
+        covered/total bins:                                 6         16          -                      
+        missing/total bins:                                10         16          -                      
+        % Hit:                                         37.50%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <auto[3],auto[1],auto[GOAT]>            25089          1          -    Covered              
+            bin <auto[2],auto[1],auto[GOAT]>             8500          1          -    Covered              
+            bin <auto[2],auto[1],auto[PRIZE]>           16635          1          -    Covered              
+            bin <auto[1],auto[1],auto[PRIZE]>           16549          1          -    Covered              
+            bin <auto[1],auto[0],auto[PRIZE]>            8256          1          -    Covered              
+            bin <auto[0],auto[0],auto[PRIZE]>           24971          1          -    Covered              
+            bin <auto[0],auto[1],*>                         0          1          2    ZERO                 
+            bin <auto[3],auto[0],*>                         0          1          2    ZERO                 
+            bin <auto[2],auto[0],*>                         0          1          2    ZERO                 
+            bin <auto[1],*,auto[GOAT]>                      0          1          2    ZERO                 
+            bin <auto[0],*,auto[GOAT]>                      0          1          2    ZERO                 
+            bin <auto[3],*,auto[PRIZE]>                     0          1          2    ZERO                 
+            bin <*,auto[0],auto[GOAT]>                      0          1          4    ZERO                 
+    Cross goat_independent_stay_stats                 100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <auto[1],auto[GOAT]>                    41724          1          -    Covered              
+            bin <auto[1],auto[PRIZE]>                   25049          1          -    Covered              
+        Illegal and Ignore Bins:
+            ignore_bin ignore_invalid                   33227                     -    Occurred             
+    Cross goat_independent_switch_stats               100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <auto[1],auto[GOAT]>                    33589          1          -    Covered              
+            bin <auto[1],auto[PRIZE]>                   33184          1          -    Covered              
+        Illegal and Ignore Bins:
+            ignore_bin ignore_invalid                   33227                     -    Occurred             
+ Covergroup instance Modified Monty Hall Problem       89.58%        100          -    Uncovered            
+    covered/total bins:                                    32         52          -                      
+    missing/total bins:                                    20         52          -                      
+    % Hit:                                             61.53%        100          -                      
+    Coverpoint stay                                   100.00%        100          -    Covered              
+        covered/total bins:                                 1          1          -                      
+        missing/total bins:                                 0          1          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin win                                         50020          1          -    Covered              
+    Coverpoint switch                                 100.00%        100          -    Covered              
+        covered/total bins:                                 1          1          -                      
+        missing/total bins:                                 0          1          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin win                                         66411          1          -    Covered              
+    Coverpoint valid                                  100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[0]                                     33227          1          -    Covered              
+        bin auto[1]                                     66773          1          -    Covered              
+    Coverpoint doors                                  100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[PRIZE]                                 66411          1          -    Covered              
+        bin auto[GOAT]                                  33589          1          -    Covered              
+    Coverpoint #doors[stay]__0#                       100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[PRIZE]                                 50020          1          -    Covered              
+        bin auto[GOAT]                                  49980          1          -    Covered              
+    Coverpoint goatcount                              100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[0]                                     24971          1          -    Covered              
+        bin auto[1]                                     24805          1          -    Covered              
+        bin auto[2]                                     25135          1          -    Covered              
+        bin auto[3]                                     25089          1          -    Covered              
+    Coverpoint #doors[switch]__1#                     100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[PRIZE]                                 66411          1          -    Covered              
+        bin auto[GOAT]                                  33589          1          -    Covered              
+    Coverpoint #doors[stay]__2#                       100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[PRIZE]                                 50020          1          -    Covered              
+        bin auto[GOAT]                                  49980          1          -    Covered              
+    Cross stay_stats                                   37.50%        100          -    Uncovered            
+        covered/total bins:                                 6         16          -                      
+        missing/total bins:                                10         16          -                      
+        % Hit:                                         37.50%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <auto[3],auto[1],auto[GOAT]>            25089          1          -    Covered              
+            bin <auto[2],auto[1],auto[GOAT]>            16635          1          -    Covered              
+            bin <auto[1],auto[0],auto[GOAT]>             8256          1          -    Covered              
+            bin <auto[2],auto[1],auto[PRIZE]>            8500          1          -    Covered              
+            bin <auto[1],auto[1],auto[PRIZE]>           16549          1          -    Covered              
+            bin <auto[0],auto[0],auto[PRIZE]>           24971          1          -    Covered              
+            bin <auto[0],auto[1],*>                         0          1          2    ZERO                 
+            bin <auto[3],auto[0],*>                         0          1          2    ZERO                 
+            bin <auto[2],auto[0],*>                         0          1          2    ZERO                 
+            bin <auto[0],*,auto[GOAT]>                      0          1          2    ZERO                 
+            bin <auto[3],*,auto[PRIZE]>                     0          1          2    ZERO                 
+            bin <auto[1],auto[1],auto[GOAT]>                0          1          1    ZERO                 
+            bin <auto[1],auto[0],auto[PRIZE]>               0          1          1    ZERO                 
+    Cross switch_stats                                 37.50%        100          -    Uncovered            
+        covered/total bins:                                 6         16          -                      
+        missing/total bins:                                10         16          -                      
+        % Hit:                                         37.50%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <auto[3],auto[1],auto[GOAT]>            25089          1          -    Covered              
+            bin <auto[2],auto[1],auto[GOAT]>             8500          1          -    Covered              
+            bin <auto[2],auto[1],auto[PRIZE]>           16635          1          -    Covered              
+            bin <auto[1],auto[1],auto[PRIZE]>           16549          1          -    Covered              
+            bin <auto[1],auto[0],auto[PRIZE]>            8256          1          -    Covered              
+            bin <auto[0],auto[0],auto[PRIZE]>           24971          1          -    Covered              
+            bin <auto[0],auto[1],*>                         0          1          2    ZERO                 
+            bin <auto[3],auto[0],*>                         0          1          2    ZERO                 
+            bin <auto[2],auto[0],*>                         0          1          2    ZERO                 
+            bin <auto[1],*,auto[GOAT]>                      0          1          2    ZERO                 
+            bin <auto[0],*,auto[GOAT]>                      0          1          2    ZERO                 
+            bin <auto[3],*,auto[PRIZE]>                     0          1          2    ZERO                 
+            bin <*,auto[0],auto[GOAT]>                      0          1          4    ZERO                 
+    Cross goat_independent_stay_stats                 100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <auto[1],auto[GOAT]>                    41724          1          -    Covered              
+            bin <auto[1],auto[PRIZE]>                   25049          1          -    Covered              
+        Illegal and Ignore Bins:
+            ignore_bin ignore_invalid                   33227                     -    Occurred             
+    Cross goat_independent_switch_stats               100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <auto[1],auto[GOAT]>                    33589          1          -    Covered              
+            bin <auto[1],auto[PRIZE]>                   33184          1          -    Covered              
+        Illegal and Ignore Bins:
+            ignore_bin ignore_invalid                   33227                     -    Occurred             
+
+TOTAL COVERGROUP COVERAGE: 89.58%  COVERGROUP TYPES: 1
+
+Total Coverage By Instance (filtered view): 89.58%
+
+End time: 18:54:05 on May 02,2020, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0

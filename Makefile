@@ -15,7 +15,7 @@ run:
           -do "coverage save -onexit top.ucdb; run 0us; exit -code 0"
 
 cov:
-	vcover report -all -details top.ucdb
+	vcover report -all -details top.ucdb | tee cov.txt
 
 clean:
 	rm -rf work

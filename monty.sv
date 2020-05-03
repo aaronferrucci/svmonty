@@ -92,7 +92,7 @@ module top;
   initial begin
 
     monty = new;
-    repeat (10000) begin
+    repeat (100000) begin
       if (!monty.randomize()) begin
         $display("error in randomize");
         $finish;
