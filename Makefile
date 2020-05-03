@@ -1,4 +1,4 @@
-all: compile run
+all: compile run cov
 
 compile:
 	vlog -sv monty.sv
