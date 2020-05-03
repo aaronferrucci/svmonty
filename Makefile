@@ -21,3 +21,4 @@ clean:
 	rm -rf work
 	rm -f top.ucdb
 	rm -f transcript
+	rm -f *.vstf
