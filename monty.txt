@@ -1,0 +1,31 @@
+M^0
+1 1 1 | x (no goat)
+^
+1 1 1 | x( no goat)
+  ^
+1 1 1 | x (no goat)
+    ^
+
+M^1
+0 1 1 | x (no goat)
+^
+0 1 1 | stay: win; switch: win
+  ^
+0 1 1 | stay: win; switch: win
+    ^
+
+M^2
+0 0 1 | stay: lose; switch: win
+^
+0 0 1 | stay: lose; switch: win
+  ^
+0 0 1 | stay: win; switch: lose
+    ^
+
+M^3
+0 0 0 | stay: lose; switch: lose
+^ 
+0 0 0 | stay: lose; switch: lose
+  ^
+0 0 0 | stay: lose; switch: lose
+    ^
